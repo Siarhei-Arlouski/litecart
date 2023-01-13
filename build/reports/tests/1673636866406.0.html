@@ -1,0 +1,762 @@
+<html lang="en" dir="ltr"><head>
+<title>LiteCart - Free shopping cart platform</title>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="oqZQ55Dqv_OB8ZtfvOkcTXOIJSIrfUtApnX4dJVERcc">
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.litecart.net/opensearch.osdx" title="LiteCart Add-ons Search">
+<link rel="icon" href="https://www.litecart.net/storage/images/favicons/favicon.ico?_=1670539459" type="image/x-icon" sizes="32x32 48x48 64x64 96x96">
+<link rel="icon" href="https://www.litecart.net/storage/images/favicons/favicon-128x128.png?_=1670539459" type="image/png" sizes="128x128">
+<link rel="icon" href="https://www.litecart.net/storage/images/favicons/favicon-192x192.png?_=1670539459" type="image/png" sizes="192x192">
+<link rel="icon" href="https://www.litecart.net/storage/images/favicons/favicon-256x256.png?_=1670539459" type="image/png" sizes="255x255">
+<link rel="manifest" href="/manifest.json">
+<link rel="alternate" hreflang="th" href="https://www.litecart.net/th/">
+<link rel="alternate" hreflang="fa" href="https://www.litecart.net/fa/">
+<link rel="alternate" hreflang="el" href="https://www.litecart.net/el/">
+<link rel="alternate" hreflang="lt" href="https://www.litecart.net/lt/">
+<link rel="alternate" hreflang="hu" href="https://www.litecart.net/hu/">
+<link rel="alternate" hreflang="pl" href="https://www.litecart.net/pl/">
+<link rel="alternate" hreflang="da" href="https://www.litecart.net/da/">
+<link rel="alternate" hreflang="nl" href="https://www.litecart.net/nl/">
+<link rel="alternate" hreflang="sv" href="https://www.litecart.net/sv/">
+<link rel="alternate" hreflang="it" href="https://www.litecart.net/it/">
+<link rel="alternate" hreflang="fr" href="https://www.litecart.net/fr/">
+<link rel="alternate" hreflang="es" href="https://www.litecart.net/es/">
+<link rel="alternate" hreflang="tr" href="https://www.litecart.net/tr/">
+<link rel="alternate" hreflang="fi" href="https://www.litecart.net/fi/">
+<link rel="alternate" hreflang="id" href="https://www.litecart.net/id/">
+<link rel="alternate" hreflang="de" href="https://www.litecart.net/de/">
+<link rel="canonical" href="https://www.litecart.net/en/">
+<meta property="og:url" content="https://www.litecart.net/en/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.litecart.net/storage/images/logotype.png?_=1668569099">
+<script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script>window._env = {"platform":{"path":"/","url":"https://www.litecart.net/en/"},"session":{"language_code":"en","country_code":"BY","currency_code":"USD"},"template":{"url":"https://www.litecart.net/frontend/template/","settings":[]},"customer":{"id":null,"username":null,"email":null}};</script>
+<meta name="description" content="A free online catalog and shopping cart platform developed in PHP.">
+
+
+<link rel="stylesheet" href="https://www.litecart.net/frontend/template/css/variables.css?_=1673088923">
+<link rel="stylesheet" href="https://www.litecart.net/frontend/template/css/framework.min.css?_=1673088923">
+<link rel="stylesheet" href="https://www.litecart.net/frontend/template/css/app.min.css?_=1673088348">
+<link rel="stylesheet" href="https://www.litecart.net/assets/fontawesome/font-awesome.min.css?_=1628638848">
+<style>
+#leaderboard{background:#fff url(/storage/images/illustration/nightsky.svg);background-size:cover;background-position:bottom;min-height:640px}#box-presentation{padding:1em;color:#fff}#rocket-cart{animation:myOrbit 5s linear infinite}@keyframes myOrbit{0%{transform:rotate(0deg) translateX(10px) rotate(0deg)}50%{transform:rotate(180deg) translateX(1px) rotate(-180deg)}100%{transform:rotate(360deg) translateX(10px) rotate(-360deg)}}#box-cookie-notice{padding:7.5px;background:rgba(255,255,255,0.9)}#box-cookie-notice .btn-group{margin:0 7.5px}#content-wrapper section{padding:5em 1em}#box-features .title{margin-top:0px}#box-features .buttons-wrapper{margin-top:40px}#box-feedback-wrapper{overflow:hidden;text-align:center}#box-facebook-wrapper{margin-bottom:2em}#box-twitter-wrapper{margin-bottom:2em}#box-facebook{margin:0 auto}#box-quotes-wrapper{margin-bottom:2em}.fb-page{display:block !important;margin:0 auto}.fb-page > span{display:block !important;margin:0 auto !important}#box-alternatives .alternative{padding:2em}#box-alternatives .alternative .title{text-align:center}#box-alternatives .alternative .image{height:128px}#box-alternatives .alternative .description{min-height:120px}#box-cart2cart{max-width:640px}#box-cart2cart .title{margin-top:0px}#tablet{display:inline-block;position:relative;margin:0 1em;width:40%}#tablet .display{position:absolute;top:4%;left:5%;right:5%;bottom:4%;background:url(https://www.litecart.net/storage/images/screenshots/frontend.png?_=1668655035);background-size:cover;background-position:top;border-radius:8px;z-index:999}#phone{display:inline-block;position:relative;width:17%;margin:0 1em}#phone .display{position:absolute;top:2.8%;left:5.8%;right:5.8%;bottom:3%;background:url(https://www.litecart.net/storage/images/screenshots/frontend_mobile.png?_=1668655035);background-size:cover;background-position:top;border-radius:6px;z-index:999}#laptop{position:relative;max-width:570px;margin:0 auto}#laptop .display{position:absolute;top:7%;left:10%;right:10.5%;bottom:20.5%;background:url(https://www.litecart.net/storage/images/screenshots/backend.png?_=1668655035);background-size:cover;z-index:999}#box-quotes{min-height:200px}#box-quotes li .quote::before{content:'“'}#box-quotes li .quote::after{content:'”'}#box-quotes li .quote{font-size:1.25em;font-style:italic;line-height:150%}#box-quotes li .bubble{margin:0px auto 45px auto;position:relative;max-width:500px;padding:15px;background:#fff;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px;border:#ccc solid 5px;text-align:left}#box-quotes li .bubble:after{content:'';position:absolute;border-style:solid;border-width:30px 30px 0;border-color:#FFFFFF transparent;display:block;width:0;z-index:1;bottom:-28px;left:30px}#box-quotes li .bubble:before{content:'';position:absolute;border-style:solid;border-width:34px 34px 0;border-color:#ccc transparent;display:block;width:0;z-index:0;bottom:-36px;left:26px}#box-quotes li .author{font-weight:bold;margin:15px}
+</style>
+<script src="https://www.googletagmanager.com/gtag.js?id=G-Y966Z8MGY5" async=""></script></head>
+
+<body>
+
+<div id="leaderboard">
+
+  
+<div id="box-cookie-notice" class="shadow text-center">
+  <div class="fourteen-forty">
+    We rely on <a href="https://www.litecart.net/en/information/15/cookie-policy">cookies</a> to understand how our customers use our website.    <div class="btn-group">
+      <button class="btn btn-default" type="button" name="accept_cookies" value="1" style="font-weight: bold;">I accept</button>      <button class="btn btn-default" type="button" name="decline_cookies" value="0">I decline</button>    </div>
+  </div>
+</div>
+
+  <header id="header" class="fourteen-forty">
+    <div class="row" style="margin: 0;">
+      <div class="col-md-6">
+        <a class="hidden-xs" href="https://www.litecart.net/en/">
+          <img src="https://www.litecart.net/storage/images/logotype_light.svg?_=1574892680" alt="LiteCart" style="max-height: 6em; padding: 1em 0;">
+        </a>
+      </div>
+
+      <div class="hidden-xs col-md-6 text-center" style="align-self: center;">
+        <a href="https://climate.stripe.com/VKRneU" target="_blank" style="color: #fff;">
+          <img src="/storage/images/stripe_climate_member.svg" alt="Stripe Climate Member" style="max-height: 1.5em; margin-right: .5em; vertical-align: bottom;">
+          Stripe Climate Member
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="fourteen-forty">
+  <div id="site-menu" class="navbar shadow" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand hidden-sm hidden-md hidden-lg" href="https://www.litecart.net/en/">
+        <img src="https://www.litecart.net/storage/images/logotype.svg" alt="LiteCart" style="max-height: 2em;">
+      </a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div id="navbar" class="navbar-collapse collapse">
+
+      <ul class="nav navbar-nav">
+        <li class="hidden-xs">
+          <a href="https://www.litecart.net/en/">
+            <i class="fa fa-home"></i>                      </a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Demo            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.litecart.net/en/demo">Demo</a>
+            </li><li><a href="https://www.litecart.net/en/comparison">Comparison</a>
+            </li><li><a href="https://www.litecart.net/en/performance">Performance</a>
+          </li></ul>
+        </li>
+
+        <li>
+          <a href="https://www.litecart.net/en/download">
+                        Download          </a>
+        </li>
+
+        <li>
+          <a href="https://www.litecart.net/en/addons">
+                        Add-ons          </a>
+        </li>
+
+        <li>
+          <a href="https://www.litecart.net/en/translations/">
+                        Translations          </a>
+        </li>
+
+        <li>
+          <a href="https://www.litecart.net/en/forums/">
+                        Forums          </a>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Developers            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="https://wiki.litecart.net/doku.php?id=introduction">Introduction</a></li>
+            <li><a href="https://wiki.litecart.net/" target="_blank">Wiki Pages</a></li>
+            <li><a href="https://github.com/litecart/litecart/issues" target="_blank">Issue Tracker</a></li>
+            <li><a href="https://github.com/litecart/litecart" target="_blank">GitHub Repository</a></li>
+          </ul>
+        </li>
+
+        
+        <li>
+          <a href="https://www.litecart.net/en/love">
+                        Love          </a>
+        </li>
+
+        <li>
+          <a href="https://www.litecart.net/en/about">
+                      About</a>
+        </li>
+
+              </ul>
+
+      <ul class="nav navbar-nav navbar-end">
+
+        
+        <li class="languages dropdown">
+          <a href="#" data-toggle="dropdown" class="dropdown-toggle" title="English"><img src="https://www.litecart.net/storage/images/languages/en.png" alt="English"> <span class="hidden-md hidden-lg">English</span> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+                        <li><a href="https://www.litecart.net/en/" hreflang="en"><img src="https://www.litecart.net/storage/images/languages/en.png" alt="English"> English</a></li>
+                        <li><a href="https://www.litecart.net/th/" hreflang="th"><img src="https://www.litecart.net/storage/images/languages/th.png" alt="ไทย"> ไทย</a></li>
+                        <li><a href="https://www.litecart.net/fa/" hreflang="fa"><img src="https://www.litecart.net/storage/images/languages/fa.png" alt="فارسی"> فارسی</a></li>
+                        <li><a href="https://www.litecart.net/el/" hreflang="el"><img src="https://www.litecart.net/storage/images/languages/el.png" alt="Ελληνικά"> Ελληνικά</a></li>
+                        <li><a href="https://www.litecart.net/lt/" hreflang="lt"><img src="https://www.litecart.net/storage/images/languages/lt.png" alt="Lietuvių kalba"> Lietuvių kalba</a></li>
+                        <li><a href="https://www.litecart.net/hu/" hreflang="hu"><img src="https://www.litecart.net/storage/images/languages/hu.png" alt="Hungarian"> Hungarian</a></li>
+                        <li><a href="https://www.litecart.net/pl/" hreflang="pl"><img src="https://www.litecart.net/storage/images/languages/pl.png" alt="Polski"> Polski</a></li>
+                        <li><a href="https://www.litecart.net/da/" hreflang="da"><img src="https://www.litecart.net/storage/images/languages/da.png" alt="Dansk"> Dansk</a></li>
+                        <li><a href="https://www.litecart.net/nl/" hreflang="nl"><img src="https://www.litecart.net/storage/images/languages/nl.png" alt="Nederlands"> Nederlands</a></li>
+                        <li><a href="https://www.litecart.net/sv/" hreflang="sv"><img src="https://www.litecart.net/storage/images/languages/sv.png" alt="Svenska"> Svenska</a></li>
+                        <li><a href="https://www.litecart.net/it/" hreflang="it"><img src="https://www.litecart.net/storage/images/languages/it.png" alt="Italiano"> Italiano</a></li>
+                        <li><a href="https://www.litecart.net/fr/" hreflang="fr"><img src="https://www.litecart.net/storage/images/languages/fr.png" alt="Française"> Française</a></li>
+                        <li><a href="https://www.litecart.net/es/" hreflang="es"><img src="https://www.litecart.net/storage/images/languages/es.png" alt="Español"> Español</a></li>
+                        <li><a href="https://www.litecart.net/tr/" hreflang="tr"><img src="https://www.litecart.net/storage/images/languages/tr.png" alt="Türk"> Türk</a></li>
+                        <li><a href="https://www.litecart.net/fi/" hreflang="fi"><img src="https://www.litecart.net/storage/images/languages/fi.png" alt="Suomi"> Suomi</a></li>
+                        <li><a href="https://www.litecart.net/id/" hreflang="id"><img src="https://www.litecart.net/storage/images/languages/id.png" alt="Indonesia"> Indonesia</a></li>
+                        <li><a href="https://www.litecart.net/de/" hreflang="de"><img src="https://www.litecart.net/storage/images/languages/de.png" alt="Deutsch"> Deutsch</a></li>
+                      </ul>
+        </li>
+
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-user"></i> Sign In            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+                        <li>
+              <form name="login_form" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" action="https://www.litecart.net/en/account/login?redirect_url=https%3A%2F%2Fwww.litecart.net%2F" class="" style="min-width: 320px; padding: 1em;">
+<input type="hidden" name="_token" value="72f4c5ecbc850ad513af724621517577b8703441d2f7e633f015cce979d8eb2e">
+                <input type="hidden" name="redirect_url" value="/">
+                <div class="form-group">
+                  <div class="input-group">
+  <span class="input-group-icon"><i class="fa fa-user fa-fw"></i></span>
+  <input class="form-input" type="text" name="username" value="" placeholder="Email or Username"></div>                </div>
+
+                <div class="form-group">
+                  <div class="input-group">
+  <span class="input-group-icon"><i class="fa fa-key fa-fw"></i></span>
+  <input class="form-input" type="password" name="password" value="" placeholder="Password"></div>                </div>
+
+                <div class="form-group">
+                  <div class="form-check">
+                    <label><input class="form-check" type="checkbox" name="remember_me" value="1"> Remember Me</label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <button type="submit" name="login" value="Sign In" class="btn btn-default btn-block">Sign In</button>                </div>
+
+                <div class="text-center" style="margin-bottom: 1em;">
+                  Or sign in with:
+                </div>
+
+                <div style="display: flex; flex-direction: row; justify-content: center; gap: .25em;">
+                  <a class="btn btn-default" href="https://www.litecart.net/en/account/facebook_oauth" title="Sign In With Facebook"><img src="https://www.litecart.net/storage/images/facebook_f_logo.svg?_=1623196434" style="height: 1.25em; vertical-align: middle;"></a>
+                  <a class="btn btn-default" href="https://www.litecart.net/en/account/github_oauth" title="Sign In With Github"><img src="https://www.litecart.net/storage/images/github_mark_logo.svg?_=1623198313" style="height: 1.25em; vertical-align: middle;"></a>
+                  <a class="btn btn-default" href="https://www.litecart.net/en/account/google_oauth" title="Sign In With Google"><img src="https://www.litecart.net/storage/images/google_g_logo.svg?_=1585969712" style="height: 1.25em; vertical-align: middle;"></a>
+                  <a class="btn btn-default" href="https://www.litecart.net/en/account/microsoft_oauth" title="Sign In With Microsoft"><img src="https://www.litecart.net/storage/images/microsoft_w_logo.svg?_=1586041244" style="height: 1.25em; vertical-align: middle;"></a>
+                </div>
+
+              </form>
+            </li>
+            <li role="separator" class="divider"></li>
+            <li class="text-center"><a href="https://www.litecart.net/en/account/reset_password?email">Lost your password?</a></li>
+            <li class="text-center"><a href="https://www.litecart.net/en/account/create">Create User Account</a></li>
+                      </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+
+  <section id="box-presentation">
+    <div class="box fourteen-forty">
+      <div class="row half-gutter">
+        <div class="col-md-6" style="align-self: center;">
+          <img id="rocket-cart" class="img-responsive" src="https://www.litecart.net/storage/images/illustration/rocket_cart.svg?_=1574822452" alt="LiteCart Rocket" style="max-width: 75%;">
+        </div>
+
+        <div class="col-md-6">
+          <h1 style="color: inherit;"><strong>An <u>amazingly fast</u> e-commerce platform</strong></h1>
+
+          <p><strong>LiteCart e-commerce platform built with PHP, jQuery and HTML 5.</strong></p>
+
+          <hr>
+
+          <h2 style="color: inherit;">What can you do with LiteCart?</h2>
+
+          <ul>
+            <li>Setup unlimited products and categories</li>
+            <li>Online catalog with search filters</li>
+            <li>One step checkout</li>
+            <li>Runs superfast on shared hosting</li>
+            <li>See reports and statistics</li>
+            <li>And much much more...</li>
+          </ul>
+
+          <p>
+            <a class="btn btn-inverse btn-lg" href="https://www.litecart.net/en/demo">Demo</a>
+            <a class="btn btn-inverse btn-lg" href="https://www.litecart.net/en/download" style="margin-inline-start: 1em;">Download</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div id="content-wrapper">
+  
+<div style="background: #fff;">
+  <section id="box-about-frontend" class="box fourteen-forty">
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <div id="tablet">
+          <img class="img-responsive" src="https://www.litecart.net/storage/images/illustration/tablet.svg?_=1665362361" alt="">
+          <div class="display"></div>
+        </div>
+
+        <div id="phone">
+          <img class="img-responsive" src="https://www.litecart.net/storage/images/illustration/phone.svg?_=1665362361" alt="">
+          <div class="display"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <h1><strong>Free e-commerce platform</strong> for everyone</h1>
+
+        <p><strong>Running LiteCart on your own machine is completely free of charge.</strong></p>
+
+        <hr>
+
+        <h2>Why choose LiteCart?</h2>
+
+        <ul>
+          <li>No unnecessary junk</li>
+          <li>Easy to install</li>
+          <li>Extremely easy to use</li>
+          <li>Easy to modify</li>
+          <li>Innovative features</li>
+          <li>Super high performance</li>
+          <li>Modern technology</li>
+        </ul>
+
+        <div style="margin-top: 1em;">
+          <a class="btn btn-primary btn-lg" href="http://demo.litecart.net" target="_blank">
+            Frontend Demo          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section id="box-about-backend" class="fourteen-forty">
+  <div class="row">
+
+    <div class="col-md-6">
+      <h2><strong>LiteCart</strong> backend</h2>
+
+      <p><strong>Clean and simple backend. Streamlined for daily work procedures.</strong></p>
+
+      <hr>
+
+      <h2>Why choose LiteCart?</h2>
+
+      <ul>
+        <li>Logical user interface</li>
+        <li>Easy to navigate</li>
+        <li>Reduced amount of mouse clicks</li>
+        <li>Plug 'n play admin apps</li>
+        <li>Modern interface</li>
+      </ul>
+
+      <p><a class="btn btn-primary btn-lg" href="http://demo.litecart.net/admin" target="_blank">Backend Demo</a></p>
+    </div>
+
+    <div class="col-md-6">
+      <div id="laptop">
+        <img class="img-responsive" src="https://www.litecart.net/storage/images/illustration/laptop.svg?_=1574822452">
+        <div class="display"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div style="background: #fff;">
+  <section id="box-about-coding" class="fourteen-forty">
+    <div class="row">
+      <div class="col-md-6">
+        <img class="img-responsive" src="https://www.litecart.net/storage/images/illustration/code.svg?_=1665362361" alt="LiteCart Coding">
+      </div>
+
+      <div class="col-md-6">
+        <h2><i class="fa fa-code"></i> <strong>Lightweight</strong> Coding</h2>
+
+        <p><strong>Programming should be just as easy as using the admin panel.</strong></p>
+
+        <hr>
+
+        <ul>
+          <li>Unique framework</li>
+          <li>Clean, simple and minimal code</li>
+          <li>Almost no third party dependencies</li>
+          <li>Plug 'n play framework design</li>
+          <li>Views separated from logic</li>
+          <li>Easy to learn</li>
+          <li>Easy to modify</li>
+        </ul>
+
+        <p><a class="btn btn-primary btn-lg" href="https://wiki.litecart.net/introduction" target="_blank">See Wiki</a></p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section id="box-about-performance" class="fourteen-forty">
+  <div class="row">
+
+    <div class="col-md-6">
+      <h2><i class="fa fa-rocket"></i> <strong>Amazing</strong> high performance</h2>
+
+      <p><strong>LiteCart is fast - and we mean lightning fast! According to Pingdom LiteCart is faster than 99% of all websites in the world.</strong></p>
+
+      <hr>
+
+      <h2>Moving to LiteCart</h2>
+
+      <ul>
+        <li>Faster page loading</li>
+        <li>Reduced server load</li>
+        <li>Reduced bandwidth use</li>
+        <li>Reduced power consumption</li>
+        <li>Better SEO rank</li>
+        <li>Increased sales</li>
+      </ul>
+
+      <p><a class="btn btn-primary btn-lg" href="https://www.litecart.net/en/performance">Performance Comparison</a></p>
+    </div>
+
+    <div class="col-md-6">
+      <div class="thumbnail" style="padding: 1em; margin: 0 1em;">
+        <img class="img-responsive" src="https://www.litecart.net/storage/images/illustration/performance.svg?_=1646865838" alt="LiteCart Performance">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div style="background: #fff;">
+  <section class="fourteen-forty">
+    <div class="row">
+      <div class="col-sm-6">
+        <div id="box-features" class="panel-default panel-body">
+          <h2 class="title">Key Features</h2>
+
+          <ul>
+            <li>Innovative</li>
+            <li>Simple user interface</li>
+            <li>High performance</li>
+            <li>Fully browsable product catalog</li>
+            <li>Unlimited products, categories, brands, etc.</li>
+            <li>Shopping cart and one step checkout</li>
+            <li>Fixed prices per currency</li>
+            <li>Different tax/VAT by region</li>
+            <li>Product options</li>
+            <li>Stock management</li>
+            <li>Customer and newsletter database</li>
+            <li>Search engine friendly</li>
+            <li>Mobile friendly</li>
+            <li>ISO-code references</li>
+            <li>Get Address modules</li>
+            <li>And much much more...</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div id="box-quotes-wrapper">
+          <div id="box-quotes" class="carousel slide" data-ride="carousel" data-interval="5000">
+  <h2 class="text-center">What users are saying</h2>
+  <ul class="carousel-inner" role="listbox">
+    <li class="item active">
+      <div class="bubble">
+        <div class="quote">I like it, thank you for inventing it!</div>
+        <div class="author">Waëferhuus SL</div>
+      </div>
+    </li>
+    <li class="item">
+      <div class="bubble">
+        <div class="quote">Thanks for a fantastic tool and all the extreme work you I understand you put in.</div>
+        <div class="author">Mac Pompeius</div>
+      </div>
+    </li>
+    <li class="item">
+      <div class="bubble">
+        <div class="quote">I have found LiteCart to be straight forward to integrate with and use compared to other shopping carts that I have encountered.</div>
+        <div class="author">J. Lugton – Nochex Dev Team</div>
+      </div>
+    </li>
+    <li class="item">
+      <div class="bubble">
+        <div class="quote">Big thanks for all your support and great work!!! :-)</div>
+        <div class="author">hansyland</div>
+      </div>
+    </li>
+    <li class="item">
+      <div class="bubble">
+        <div class="quote">I have used many carts. Some paid, some open source.. In terms of functionality and speed, LiteCart is superlative!</div>
+        <div class="author">Balaji Shankar</div>
+      </div>
+    </li>
+  </ul>
+  <div class="text-center">
+    <a class="btn btn-primary btn-lg" href="https://www.litecart.net/en/love">See more</a>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div>
+  <section id="box-alternatives" class="fourteen-forty text-center">
+
+    <h2 class="title"><i class="fa fa-download fa-lg" style="color: #99cc33;"></i> Install LiteCart</h2>
+
+    <p class="description">LiteCart can be obtained through any of the alternatives below:</p>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="alternative card">
+          <div class="image"><img src="https://www.litecart.net/storage/images/illustration/software_box.svg?_=1575340030" alt="LiteCart Software Box" style="height: 128px;"></div>
+          <h3 class="title">Manual Installation</h3>
+          <div class="description">Download LiteCart for a manual installation on your webserver. Apache 2, PHP 5.3+ and MySQL 5.5+ is required.</div>
+          <div class="link"><a class="btn btn-success btn-lg" href="https://www.litecart.net/en/download">Download Now</a></div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="alternative card">
+          <div class="image"><img src="https://www.litecart.net/storage/images/other/softaculous_box.png?_=1568659524" alt="Softaculous Package" style="height: 96px; margin-top: 20px;"></div>
+          <h3 class="title">Automatic Installation</h3>
+          <div class="description">Install LiteCart using Softaculous Auto Installer. Automatic upgrades are supported. Softaculous is also available on many web hosts world wide.</div>
+          <div class="link">
+            <a class="button btn btn-success btn-lg" href="http://remote.softaculous.com/index.php?act=software&amp;soft=468" target="_blank">Install Now</a>
+            &nbsp;
+            <a class="button btn btn-primary btn-lg" href="http://www.softaculous.com/apps/ecommerce/LiteCart" target="_blank">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="alternative card">
+          <div class="image"><img src="https://www.litecart.net/storage/images/other/ampps_logo.png?_=1568659524" alt="AMPPS Logotype" style="height: 48px; margin-top: 45px;"></div>
+          <h3 class="title">Desktop Installation</h3>
+          <div class="description">Install LiteCart on your desktop computer using AMPPS. A free software stack of Apache, Mysql, PHP, Perl, Python and Softaculous auto installer.</div>
+          <div class="link"><a class="btn btn-primary btn-lg" href="http://www.ampps.com/" target="_blank">Read More</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div style="background: #fff;">
+  <section class="fourteen-forty">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>The best e-commerce platform</h2>
+<p>LiteCart derives from many years experience using <strong>different e-commerce platforms</strong>. Working in the e-commerce industry we have year by year seen the same problematics in different clients. There was a mainstream demand but platforms needed modifications. Modifications can turn any <strong>free open source platform</strong> into a lot of work and expenses. We wanted to change all that. Not only did we want to create something that was adjusted to the demand. We wanted to build <strong>a completely new experience</strong>.</p>
+<p>We asked ourselves, what is <strong>the best e-commerce solution?</strong> We came up with the facts simplicity, easy to use, easy to modify and lightweight but yet powerful. How could we combine all these?</p>
+<p>LiteCart is the result of a lot of study and <strong>many ideas brought together</strong>. Where convenience in usability don't always go hand in hand with codability we try to keep both sides in mind when <strong>designing new features</strong>.</p>
+<p>Join us on a continous journey making e-commerce a better place.</p>      </div>
+
+      <div class="col-sm-6">
+        <div id="box-facebook-wrapper">
+          <div class="fb-page" data-href="https://www.facebook.com/LiteCart" data-width="280" data-hide-cover="false" data-show-facepile="true" data-show-posts="false" data-small-header="false" data-adapt-container-width="true"></div>
+        </div>
+
+        <div id="box-twitter-wrapper" class="text-center">
+          <a href="https://twitter.com/litecart" class="twitter-follow-button" data-show-count="false">Follow @litecart on twitter</a>
+        </div>
+
+        <div id="box-github-wrapper" class="text-center">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="fourteen-forty">
+  <div class="row">
+    <div class="col-md-6">
+      <section id="box-cart2cart-wrapper" class="panel-default panel-body">
+        <div id="box-cart2cart">
+  <h2 class="title">Assisted Data Migration</h2>
+  <p class="description"><strong>Moving data to LiteCart is simple</strong> using Cart2Cart. You can copy categories, products, manufacturers, customers, orders, and tax rates <strong>all at once</strong>.</p>
+
+  <a class="btn btn-primary btn-lg" href="https://www.shopping-cart-migration.com/supported-carts/45853-litecart">
+    Move Data To LiteCart  </a>
+
+  <p><a href="https://www.shopping-cart-migration.com/supported-carts/45853-litecart" target="_blank"><img src="https://www.litecart.net/storage/images/other/cart2cart_250x68.png" alt="Cart2Cart"></a></p>
+</div>
+      </section>
+    </div>
+    <div class="col-md-6">
+      <section id="box-poll">
+  <form name="poll_form" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
+<input type="hidden" name="_token" value="72f4c5ecbc850ad513af724621517577b8703441d2f7e633f015cce979d8eb2e">
+    <input type="hidden" name="poll[id]" value="9">
+    <h2 class="question" style="margin-top: 0;">What do you think of this official website?</h2>
+
+    <ul class="answers list-unstyled">
+            <li>
+        <label style="display: block;">
+          <input class="form-check" type="radio" name="poll[answer]" value="41"> It's great <strong class="result"></strong>
+          <div class="bar" style="background:#f0f; line-height: 2px; width: 0%;">&nbsp;</div>
+        </label>
+      </li>
+            <li>
+        <label style="display: block;">
+          <input class="form-check" type="radio" name="poll[answer]" value="42"> I'm okay with it <strong class="result"></strong>
+          <div class="bar" style="background:#f0f; line-height: 2px; width: 0%;">&nbsp;</div>
+        </label>
+      </li>
+            <li>
+        <label style="display: block;">
+          <input class="form-check" type="radio" name="poll[answer]" value="43"> It needs a makeover <strong class="result"></strong>
+          <div class="bar" style="background:#f0f; line-height: 2px; width: 0%;">&nbsp;</div>
+        </label>
+      </li>
+            <li>
+        <label style="display: block;">
+          <input class="form-check" type="radio" name="poll[answer]" value="44"> It hurts my eyes <strong class="result"></strong>
+          <div class="bar" style="background:#f0f; line-height: 2px; width: 0%;">&nbsp;</div>
+        </label>
+      </li>
+          </ul>
+
+  
+<input type="hidden" name="_token" value="72f4c5ecbc850ad513af724621517577b8703441d2f7e633f015cce979d8eb2e"></form></section>
+
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<div id="github">
+  <a href="https://github.com/litecart/litecart/tree/master" target="_blank"><img src="https://www.litecart.net/storage/images/banners/github_code.png?_=1469917680"></a>
+</div>
+
+<footer id="footer" class="hidden-print">
+
+  <div class="fourteen-forty">
+
+    <div class="row">
+
+      <div class="col-md-8">
+        <div class="row">
+
+          <section class="account col-md-4">
+            <h3 class="title">Support &amp; Development</h3>
+            <ul class="list-unstyled">
+              <li><a href="https://github.com/litecart/litecart/issues/" target="_blank">Issue Tracker</a></li>
+              <li><a href="https://www.litecart.net/forums/" target="_blank">Community Forums</a></li>
+              <li><a href="https://wiki.litecart.net/" target="_blank">Wiki Pages</a></li>
+              <li><a href="https://www.litecart.net/en/about">About</a></li>
+              <li><a href="https://www.litecart.net/en/services">Services</a></li>
+              <li><a href="https://www.litecart.net/en/contact_us">Contact</a></li>
+            </ul>
+          </section>
+
+          <section class="information col-md-4">
+            <h3 class="title">Partners</h3>
+            <ul class="list-unstyled">
+                              <li><a href="https://www.litecart.net/en/partners/14/a2-hosting">A2 Hosting</a></li>
+                              <li><a href="https://www.litecart.net/en/partners/9/cart2cart">Cart2Cart</a></li>
+                              <li><a href="https://www.litecart.net/en/partners/20/hostdash">HostDash</a></li>
+                              <li><a href="https://www.litecart.net/en/partners/21/hostiso">Hostiso</a></li>
+                              <li><a href="https://www.litecart.net/en/partners/11/milesweb">MilesWeb</a></li>
+                              <li><a href="https://www.litecart.net/en/partners/6/softaculous">Softaculous</a></li>
+                              <li><a href="https://www.litecart.net/en/partners/13/become-a-hosting-partner">Become a Hosting Partner</a></li>
+                          </ul>
+          </section>
+
+          <section class="store-info col-md-4">
+          <h3 class="title">Featured Add-ons</h3>
+            <ul class="list-unstyled">
+                            <li><a href="https://www.litecart.net/en/addons/32/dymo-print">DYMO Print</a></li>
+                            <li><a href="https://www.litecart.net/en/addons/9/automatic-database-backups">Automatic Database Backups</a></li>
+                            <li><a href="https://www.litecart.net/en/addons/35/discount-codes">Discount Codes</a></li>
+                            <li><a href="https://www.litecart.net/en/addons/38/multi-update-products">Multi Update Products</a></li>
+                            <li><a href="https://www.litecart.net/en/addons/435/file-manager">File Manager</a></li>
+                            <li><a href="https://www.litecart.net/en/addons/54/product-quantity-prices">Product Quantity Prices</a></li>
+                            <li><a href="https://www.litecart.net/en/addons/388/firewall">Firewall</a></li>
+                            <li><a href="https://www.litecart.net/en/addons/89/pdf-invoice">PDF Invoice</a></li>
+                          </ul>
+          </section>
+
+        </div>
+      </div>
+
+      <section class="col-md-4" style="align-self: center;">
+        <div class="logotype">
+          <img src="https://www.litecart.net/storage/images/logotype.svg?_=1668569099" class="img-responsive" style="max-height: 64px;" alt="LiteCart" title="LiteCart">
+        </div>
+
+        <ul class="social-bookmarks list-inline text-center">
+                    <li><a href="https://github.com/litecart/litecart" class="thumbnail"><i class="fa fa-github fa-fw" title="GitHub"></i></a></li>
+                    <li><a href="https://www.facebook.com/litecart" class="thumbnail"><i class="fa fa-facebook fa-fw" title="Facebook"></i></a></li>
+                    <li><a href="https://www.twitter.com/litecart" class="thumbnail"><i class="fa fa-twitter fa-fw" title="Twitter"></i></a></li>
+                  </ul>
+      </section>
+
+    </div>
+
+  </div>
+</footer>
+
+<section id="copyright">
+  <div class="notice fourteen-forty">
+    Copyright © 2023 <a href="http://www.litecart.net">LiteCart.net</a>. All rights reserved · LiteCart® is a registered trademark property of founder T. Almroth
+  </div>
+</section>
+
+<script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+<script src="https://www.litecart.net/assets/jquery/jquery-3.6.0.min.js?_=1619571622"></script>
+<script src="https://www.litecart.net/frontend/template/js/app.min.js?_=1673517003"></script>
+<script src="https://www.litecart.net/frontend/template/js/analytics.js?_=1623196658"></script>
+<script src="https://www.litecart.net/frontend/template/js/facebook.js?_=1655326640"></script>
+<script>
+  $('button[name="accept_cookies"]').click(function(){
+    $('#box-cookie-notice').slideUp();
+    var now = new Date();
+    var expires = new Date(now.getTime() + (365 * 24 * 60 * 60 * 1000));
+    document.cookie = 'cookies_accepted=1;expires=' + expires.toUTCString();
+  });
+
+  $('button[name="decline_cookies"]').click(function(){
+    $('#box-cookie-notice').slideUp();
+    var now = new Date();
+    var expires = new Date(now.getTime() + (365 * 24 * 60 * 60 * 1000));
+    document.cookie = 'cookies_accepted=0;expires=0';
+  });
+
+  $('form[name="poll_form"] input[name="poll[answer]"]').change(function(e){
+    e.preventDefault();
+    $.ajax({
+      url: 'https://www.litecart.net/en/ajax/poll_result.json',
+      type: 'post',
+      data: $(this).closest('form').serialize(),
+      cache: false,
+      async: true,
+      dataType: 'json',
+      error: function(jqXHR, textStatus, errorThrown) {
+        if (console) console.warn(errorThrown.message);
+      },
+      success: function(data) {
+        $.each(data, function(key, value) {
+          if (console) console.log(key +': '+ value);
+          $('form[name="poll_form"] input[name="poll[answer]"][value="'+key+'"]').closest('label').find('.result').html(value+'%');
+          $('form[name="poll_form"] input[name="poll[answer]"][value="'+key+'"]').closest('label').find('.bar').css('width', value+'%');
+        });
+      },
+    });
+  });
+
+  if (document.cookie.match(/cookies_accepted=1/)) {
+
+    (function(){
+      var script = document.createElement('script');
+      script.src = 'https://platform.twitter.com/widgets.js';
+      script.async = true;
+      script.charset = 'utf-8';
+      document.body.appendChild(script);
+    }());
+
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '936647536361282',
+        xfbml      : true,
+        version    : 'v2.8'
+      });
+    };
+
+    (function(d,s,id){
+      if (d.getElementById(id)) return;
+      var js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js';
+      document.body.append(js);
+    }(document, 'script', 'facebook-jssdk'));
+  }
+</script>
+
+
+
+
+
+</body></html>

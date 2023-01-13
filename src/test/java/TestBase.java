@@ -1,20 +1,21 @@
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import com.codeborne.selenide.Configuration;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
-public class TestBase {
-    WebDriver driver;
-    String baseUrl = "https://demo.litecart.net/";
+import static com.codeborne.selenide.Browsers.CHROME;
+import static com.codeborne.selenide.Selenide.*;
 
+public class TestBase {
     @BeforeTest
     public void setup() {
-        driver = new ChromeDriver();
-        driver.get(baseUrl);
+        Configuration.baseUrl = "https://demo.litecart.net/";
+        Configuration.browser = CHROME;
+        Configuration.pageLoadTimeout = 5000;
+        open(Configuration.baseUrl);
     }
 
     @AfterTest
     public void teardown() {
-        driver.quit();
+        closeWebDriver();
     }
 }
