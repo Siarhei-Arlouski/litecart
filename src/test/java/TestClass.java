@@ -78,8 +78,8 @@ public class TestClass extends TestBase{
 
         switchTo().window(1);
         $("title").shouldHave(attribute("text", "LiteCart - Free shopping cart platform"));
-
         closeWindow();
+
         switchTo().window(0);
         $("title").shouldHave(attribute("text", "My Store | Online Store"));
     }
