@@ -13,9 +13,12 @@ public class TestBase {
 
         Browser browser = Browser.valueOf(System.getProperty("browser", Browser.CHROME.toString()));
         switch (browser) {
-            case CHROME -> Configuration.browser = CHROME;
-            case EDGE -> Configuration.browser = EDGE;
-            case FIREFOX -> Configuration.browser = FIREFOX;
+            case CHROME: Configuration.browser = CHROME;
+            break;
+            case EDGE: Configuration.browser = EDGE;
+            break;
+            case FIREFOX: Configuration.browser = FIREFOX;
+            break;
         }
 
         Configuration.baseUrl = "https://demo.litecart.net/";
