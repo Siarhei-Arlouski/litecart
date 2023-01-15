@@ -108,6 +108,6 @@ public class TestClass extends TestBase{
     @Test
     @Description("Test failure")
     public void testFailure() {
-        fail();
+        fail("Test failure for Allure");
     }
 }
