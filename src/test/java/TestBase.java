@@ -9,9 +9,9 @@ import static com.codeborne.selenide.Selenide.*;
 public class TestBase {
     @BeforeTest
     public void setup() {
-        Configuration.remote = "http://192.168.100.2:4444/wd/hub";
+//        Configuration.remote = "http://192.168.100.2:4444/wd/hub";
 
-        Browser browser = Browser.valueOf(System.getProperty("browser", Browser.FIREFOX.toString()));
+        Browser browser = Browser.valueOf(System.getProperty("browser", Browser.CHROME.toString()));
         switch (browser) {
             case CHROME -> Configuration.browser = CHROME;
             case EDGE -> Configuration.browser = EDGE;

@@ -86,4 +86,4 @@ target/*
 .allure/*
 
 # Allure-results
-allure-results/*
+target/allure-results/*
