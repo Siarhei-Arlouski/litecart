@@ -9,16 +9,19 @@ import static com.codeborne.selenide.Selenide.*;
 public class TestBase {
     @BeforeTest
     public void setup() {
-        Browser browser = Browser.valueOf(System.getProperty("browser", Browser.CHROME.toString()));
+        Configuration.remote = "http://192.168.100.2:4444/wd/hub";
+
+        Browser browser = Browser.valueOf(System.getProperty("browser", Browser.FIREFOX.toString()));
         switch (browser) {
             case CHROME -> Configuration.browser = CHROME;
-            case FIREFOX -> Configuration.browser = FIREFOX;
             case EDGE -> Configuration.browser = EDGE;
+            case FIREFOX -> Configuration.browser = FIREFOX;
         }
 
         Configuration.baseUrl = "https://demo.litecart.net/";
         Configuration.pageLoadTimeout = 5000;
         open(Configuration.baseUrl);
+
     }
 
     @AfterTest
