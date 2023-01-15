@@ -7,6 +7,7 @@ import pages.RubberDucksPage;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
+import static org.testng.Assert.fail;
 
 public class TestClass extends TestBase{
     @Test
@@ -102,5 +103,11 @@ public class TestClass extends TestBase{
 
         switchTo().window(0);
         $("title").shouldHave(attribute("text", "My Store | Online Store"));
+    }
+
+    @Test
+    @Description("Test failure")
+    public void testFailure() {
+        fail();
     }
 }
