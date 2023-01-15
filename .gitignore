@@ -78,12 +78,12 @@ fabric.properties
 
 # Build
 build/*
-
-# Target
-target/*
-
-# Allure
-.allure/*
-
-# Allure-results
-target/allure-results/*
+#
+## Target
+#target/*
+#
+## Allure
+#.allure/*
+#
+## Allure-results
+#target/allure-results/*
