@@ -10,6 +10,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static org.testng.Assert.fail;
 
 public class TestClass extends TestBase{
+
     @Test
     @Feature("SP-01")
     @Description("Home page title test")

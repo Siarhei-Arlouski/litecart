@@ -7,6 +7,7 @@ import static com.codeborne.selenide.Browsers.*;
 import static com.codeborne.selenide.Selenide.*;
 
 public class TestBase {
+
     @BeforeTest
     public void setup() {
 //        Configuration.remote = "http://192.168.100.2:4444/wd/hub";
