@@ -24,7 +24,6 @@ public class TestBase {
         Configuration.baseUrl = "https://demo.litecart.net/";
         Configuration.pageLoadTimeout = 5000;
         open(Configuration.baseUrl);
-
     }
 
     @AfterTest

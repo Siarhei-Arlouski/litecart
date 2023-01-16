@@ -106,8 +106,8 @@ public class TestClass extends TestBase{
     }
 
     @Test
-    @Description("Test failure")
+    @Description("Test failure for Allure report")
     public void testFailure() {
-        fail("Test failure for Allure");
+        fail("Test failure for Allure report");
     }
 }
